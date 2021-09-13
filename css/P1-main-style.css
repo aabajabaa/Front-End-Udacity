@@ -1,0 +1,52 @@
+
+.box{
+    
+    display: grid;
+    grid-template-rows: repeat(5,250px);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "header header"
+    "post1 post2"
+    "post3 post4"
+    "post5 post6"
+    "footer footer";
+    background-color: aqua;
+    border: solid red;
+    padding: 20px;
+}
+#header{
+grid-area: header;
+}
+.post{
+    background-color:cornsilk;
+    border: 1px solid red;
+    /* padding: 100px; */
+}
+#one{
+    font-size: xx-large;
+    grid-area: post1;
+    
+    
+}
+#two{
+    grid-area: post2;
+    padding-left: 300px;
+}
+#three{
+    grid-area: post3;
+}
+#four{
+    grid-area: post4;
+}
+#five{
+    grid-area: post5;
+}
+#six{
+    grid-area: post6;
+}
+#footer{
+    grid-area: footer;
+}
+#box1{
+    padding: 50px;
+}
