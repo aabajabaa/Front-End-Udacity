@@ -1,0 +1,45 @@
+.box{
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "header header header"
+    "one one column"
+    "two two column"
+    "three three column"
+    "four four column"
+    "footer footer footer";
+    border-color: blueviolet;
+    border: solid brown;
+    background-color: rgb(124, 139, 68);
+    padding: 10px;
+
+}
+.post{
+    background-color: lightcoral;
+    border: solid red;
+    padding: 80px;
+}
+
+#header{
+    grid-area: header;
+    font-size: xx-large;
+}
+#column{
+    grid-area: column;
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#footer{
+    grid-area: footer;
+}
