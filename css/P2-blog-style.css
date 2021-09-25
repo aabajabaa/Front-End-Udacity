@@ -43,3 +43,20 @@
 #footer{
     grid-area: footer;
 }
+@media(max-width: 766px){
+
+    .box{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,250px);
+        grid-template-areas:
+        "header"
+        "column"
+        "one"
+        "two"
+        "three"
+        "four"
+        "footer"
+        ;
+    }
+}
