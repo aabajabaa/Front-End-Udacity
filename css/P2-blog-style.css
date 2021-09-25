@@ -15,6 +15,11 @@
     padding: 10px;
 
 }
+.navigation_blog_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 .post{
     background-color: lightcoral;
     border: solid red;
@@ -44,7 +49,6 @@
     grid-area: footer;
 }
 @media(max-width: 766px){
-
     .box{
         display: grid;
         grid-template-columns: 1fr;
