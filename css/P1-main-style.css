@@ -64,22 +64,3 @@
 #footer{
     grid-area: footer;
 }
-@media(max-width: 766px){
-    body{
-        background-color: black;
-    }
-        .box{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(8,250px);
-            grid-template-areas:
-            "header"
-            "post1"
-            "post2"
-            "post3"
-            "post4"
-            "post5"
-            "post6"
-            "footer";
-        }
-}

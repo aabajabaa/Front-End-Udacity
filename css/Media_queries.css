@@ -1,0 +1,71 @@
+/* Tablet Screen Size */
+@media (min-width: 650px) and (max-width: 780px){
+  body{
+    background-color: black;
+}
+    .box{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: repeat(8,250px);
+        grid-template-areas:
+        "header header"
+        "post1 post1"
+        "post2 post2"
+        "post3 post3"
+        "post4 post4"
+        "post5 post5"
+        "post6 post6"
+        "footer footer";
+  }
+}
+@media (min-width: 650px) and (max-width: 780px){
+  .box2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 250px);
+    grid-template-areas:
+      "header2"
+      "column2"
+      "column2"
+      "one2"
+      "two2"
+      "three2"
+      "four2"
+      "footer2";
+  }
+}
+/* Phone Screen Setting */
+@media (max-width: 600px) {
+  .box2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 250px);
+    grid-template-areas:
+      "header2"
+      "column2"
+      "one2"
+      "two2"
+      "three2"
+      "four2"
+      "footer2";
+  }
+}
+@media(max-width: 600px){
+    body{
+        background-color: black;
+    }
+        .box{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8,250px);
+            grid-template-areas:
+            "header"
+            "post1"
+            "post2"
+            "post3"
+            "post4"
+            "post5"
+            "post6"
+            "footer";
+        }
+}

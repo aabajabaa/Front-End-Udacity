@@ -1,66 +1,68 @@
-.box{
-    display: grid;
-    grid-template-columns: 2fr, 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
-    "header header header"
-    "one one column"
-    "two two column"
-    "three three column"
-    "four four column"
-    "footer footer footer";
-    border-color: blueviolet;
-    border: solid brown;
-    background-color: rgb(124, 139, 68);
-    padding: 10px;
+.box2 {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+  "header2 header2 header2 header2 header2"
+  "one2 one2 one2 one2 column2"
+  "two2 two2 two2 two2 column2"
+  "three2 three2 three2 three2 column2"
+  "four2 four2 four2 four2 column2"
+  "footer2 footer2 footer2 footer2 footer2";
+  border-color: blueviolet;
+  border: solid brown;
+  background-color: rgb(124, 139, 68);
+  padding: 10px;
+}
+.navigation_blog_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+}
+.post2 {
+  background-color: lightcoral;
+  border: solid red;
+  padding: 80px;
+}
 
+#header2 {
+  grid-area: header2;
+  font-size: xx-large;
 }
-.navigation_blog_page{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#column2 {
+  grid-area: column2;
 }
-.post{
-    background-color: lightcoral;
-    border: solid red;
-    padding: 80px;
+#one2 {
+  grid-area: one2;
+}
+#two2 {
+  grid-area: two2;
+}
+#three2 {
+  grid-area: three2;
+}
+#four2 {
+  grid-area: four2;
+}
+#footer2 {
+  grid-area: footer2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.author{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  line-height: 2em;
+}
+.bio{
+  line-height: 2em;
+  display: block;
+  letter-spacing: .05em;
+  font-style: italic;
 }
 
-#header{
-    grid-area: header;
-    font-size: xx-large;
-}
-#column{
-    grid-area: column;
-}
-#one{
-    grid-area: one;
-}
-#two{
-    grid-area: two;
-}
-#three{
-    grid-area: three;
-}
-#four{
-    grid-area: four;
-}
-#footer{
-    grid-area: footer;
-}
-@media(max-width: 766px){
-    .box{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(7,250px);
-        grid-template-areas:
-        "header"
-        "column"
-        "one"
-        "two"
-        "three"
-        "four"
-        "footer"
-        ;
-    }
-}
